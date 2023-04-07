@@ -1,0 +1,17 @@
+@import "../../styles/main.scss";
+
+.footer {
+  font-size: 16px;
+  margin: 0 auto;
+  max-width: 1150px;
+  width: 100%;
+  padding: 0 15px;
+  margin-top: auto;
+}
+
+.footerContainer {
+  border-top: 1px solid $background-medium;
+  padding: 34px 0;
+  display: flex;
+  justify-content: space-between;
+}

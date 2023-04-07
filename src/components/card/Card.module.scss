@@ -1,0 +1,174 @@
+@import "../../styles/main.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid grey;
+}
+
+.contentContainer {
+  display: flex;
+  cursor: pointer;
+}
+
+.text {
+  color: $background;
+}
+
+.date {
+  color: $background;
+}
+
+.primary {
+  gap: 32px;
+  display: flex;
+  justify-content: space-between;
+  height: $post-height;
+
+  .contentContainer {
+    justify-content: space-between;
+    width: 100%;
+    gap: 8px;
+    cursor: pointer;
+  }
+
+  .textAndTitleContainer {
+    max-width: 448px;
+    width: 100%;
+  }
+
+  img {
+    max-width: 256px;
+    max-height: 244px;
+  }
+  .title {
+    margin-bottom: 24px;
+    max-height: 132px;
+    height: 100%;
+  }
+  .text {
+    max-height: 168px;
+    height: 100%;
+  }
+}
+
+.secondary {
+  flex-direction: column;
+  justify-content: space-between;
+  height: $post-height;
+  max-width: 352px;
+  flex: 1 1 33%;
+
+  .contentContainer {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    width: 100%;
+    gap: 8px;
+  }
+
+  img {
+    max-width: 352px;
+    max-height: 246px;
+  }
+  .title {
+    font-size: 18px;
+  }
+  .text {
+    display: none;
+  }
+}
+
+.tertiary {
+  height: calc(($post-height / 2) - 20px);
+  justify-content: space-between;
+
+  .contentContainer {
+    justify-content: space-between;
+    width: 100%;
+    max-width: 100%;
+    gap: 34px;
+  }
+
+  img {
+    width: 96px;
+    height: 96px;
+  }
+
+  .title {
+    max-height: 84px;
+    height: 100%;
+    font-size: 18px;
+  }
+  .text {
+    display: none;
+  }
+}
+
+.search {
+  height: 206px;
+  justify-content: start;
+  gap: 32px;
+
+  .contentContainer {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 40px;
+  }
+
+  img {
+    width: 96px;
+    height: 96px;
+  }
+
+  .text {
+    display: none;
+  }
+
+  .title {
+    margin-top: 15px;
+    font-size: 18px;
+  }
+}
+
+.content {
+  justify-content: center;
+  .contentContainer {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .date {
+    display: none;
+  }
+
+  .title {
+    font-size: 56px;
+  }
+  img {
+    margin: 0 auto;
+    width: 90%;
+    max-height: 500px;
+  }
+  .text {
+    margin-top: 30px;
+  }
+}
+
+.buttonsContainer {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.likeAndDislikeContainer {
+  display: flex;
+  justify-content: space-between;
+  max-width: 145px;
+  width: 100%;
+}
+
+.favoritesButtonContainer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}

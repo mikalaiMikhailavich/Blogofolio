@@ -1,0 +1,15 @@
+@import "../../styles/main.scss";
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.link {
+  color: $secondary-color;
+}
+
+:global(.dark-theme) {
+  .link {
+    color: white;
+  }
+}

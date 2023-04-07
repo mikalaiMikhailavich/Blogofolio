@@ -1,0 +1,30 @@
+@import "../../../styles/main.scss";
+
+.tab {
+  @include font(16px);
+  font-weight: 600;
+  padding: 0 40px 24px 40px;
+  &:hover {
+    color: $primary-color;
+    cursor: pointer;
+  }
+}
+
+a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+:global(.light-theme) {
+  color: $secondary-color;
+  .active {
+    border-bottom: 2px solid black;
+  }
+}
+
+:global(.dark-theme) {
+  color: $white-color;
+  .active {
+    border-bottom: 2px solid white;
+  }
+}

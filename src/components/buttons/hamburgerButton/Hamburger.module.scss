@@ -1,0 +1,15 @@
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 20px;
+  height: 14px;
+}
+
+.hamburgerContainer {
+  width: 84px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}

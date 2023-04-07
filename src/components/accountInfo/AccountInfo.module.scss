@@ -1,0 +1,26 @@
+@import "../../styles/main.scss";
+
+.accountInfo {
+  @include font(16px);
+  color: $white-color;
+  display: flex;
+  align-items: center;
+  width: 230px;
+  height: $header-height;
+  background-color: $primary-color;
+}
+
+.accountCapitals {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  margin: 0 auto;
+  background-color: $primary-color-light;
+  border-radius: 2px;
+}
+
+.accountName {
+  margin: 0 auto;
+}

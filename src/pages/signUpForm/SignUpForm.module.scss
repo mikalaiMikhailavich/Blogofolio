@@ -1,0 +1,30 @@
+@import "../../styles/main.scss";
+.formContainer {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px;
+  max-width: 625px;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+:global(.dark-theme) {
+  .formContainer {
+    box-shadow: rgb(194, 179, 179) 0px 1px 4px;
+  }
+}
+.inputsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.link {
+  color: $primary-color-light;
+}
+
+.redirect {
+  text-align: center;
+}

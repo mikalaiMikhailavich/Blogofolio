@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+}
+
+.favoriteButton {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.active {
+  background-color: red;
+}

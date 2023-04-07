@@ -1,0 +1,27 @@
+//system-color
+
+$primary-color: #2231aa;
+$primary-color-light: #5360cd;
+$secondary-color: #313037;
+
+//background colors
+
+$background: #8d8e97;
+$background-medium: #dadada;
+$background-light: #f3f3f3;
+
+//contextual-colors
+
+$error-color: #fd3419;
+$white-color: #ffffff;
+$light-color: #e8e8e8;
+
+// components
+
+//heights
+$header-height: 84px;
+$post-height: 452px;
+$aside-post-height: calc($post-height / 2);
+
+$light-text: white;
+$dark-text: #313037;

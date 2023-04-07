@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  font-weight: 600;
+}
+
+.input {
+  padding-left: 20px;
+  height: 56px;
+  outline: 0;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+input:invalid {
+  outline: 2px solid red;
+}

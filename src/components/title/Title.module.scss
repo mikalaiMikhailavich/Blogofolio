@@ -1,0 +1,10 @@
+@import "../../styles/main.scss";
+
+.title {
+  display: inline;
+  width: 200px;
+  height: 100px;
+  color: black;
+  font-size: 45px;
+  background: $background;
+}

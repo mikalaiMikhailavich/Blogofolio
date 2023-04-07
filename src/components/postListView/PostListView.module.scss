@@ -1,0 +1,26 @@
+.container {
+  margin-top: 64px;
+  display: flex;
+  gap: 20px;
+}
+
+.secondaryContainer {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 40px;
+  column-gap: 32px;
+}
+
+.mainAndSecondaryContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: calc(100% - (100% / 3));
+}
+
+.asideContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: calc(100% - (100% - (100% / 3)));
+}

@@ -1,0 +1,80 @@
+@import "../../styles/main.scss";
+
+.container {
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pagesContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.pageNumber {
+  font-weight: 600;
+  font-size: 16px;
+  color: $secondary-color;
+  cursor: pointer;
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+.active {
+  font-weight: 600;
+  color: $primary-color;
+}
+
+.button {
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+  background: none;
+  color: $secondary-color;
+  cursor: pointer;
+  &:hover {
+    color: $primary-color;
+  }
+  &:disabled {
+    color: $background;
+    &:hover {
+      color: $background;
+      cursor: default;
+    }
+  }
+}
+
+:global(.dark-theme) {
+  .pageNumber {
+    color: $white-color;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  .active {
+    font-weight: 600;
+    color: $primary-color;
+  }
+
+  .button {
+    border: none;
+    background: none;
+    color: $white-color;
+    cursor: pointer;
+    &:hover {
+      color: $primary-color;
+    }
+    &:disabled {
+      color: $background;
+      &:hover {
+        color: $background;
+        cursor: default;
+      }
+    }
+  }
+}

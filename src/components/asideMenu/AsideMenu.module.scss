@@ -1,0 +1,46 @@
+@import "../../styles/main.scss";
+
+.wrapper {
+  z-index: 10;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: $header-height;
+  visibility: hidden;
+  border-right: none !important;
+  transition: all 0.1s ease-in;
+}
+
+.blur {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  backdrop-filter: blur(2px);
+}
+
+.container {
+  position: absolute;
+  width: 230px;
+  height: 81vh;
+  background-color: white;
+  border-top: 1px solid grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transform: translateX(-100%);
+  transition: all 0.3s ease-in;
+}
+
+.themeButtonsContainer {
+  display: flex;
+  height: 84px;
+}
+
+.active {
+  transform: translateX(0);
+  visibility: visible;
+}
+
+.as {
+  color: red;
+}
